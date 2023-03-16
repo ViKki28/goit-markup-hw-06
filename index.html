@@ -423,13 +423,52 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close-modal1" width="8" weight="8">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h3 class="modal-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form class="modal-form form">
+          <label for="" class="label"
+            >Name
+            <input
+              type="text"
+              class="form-input"
+              placeholder=""
+              name="Name
+          "
+              required
+          /></label>
+          <label for="" class="label"
+            >Phone
+            <input
+              type="tel"
+              class="form-input"
+              placeholder=""
+              name="Phone"
+              pattern="^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$"
+              required
+          /></label>
+          <label for="" class="label"
+            >Email
+            <input
+              type="email"
+              class="form-input"
+              placeholder=""
+              name="email"
+              required
+          /></label>
+          <label for="" class="label"
+            >Comment
+            <input type="text" class="form-input" placeholder="" name="Comment"
+          /></label>
+          <button type="submit" class="form-btn modal-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
