@@ -566,9 +566,9 @@ button {
   color: var(--main-title-color);
   margin-bottom: 16px;
 }
-.modal-form {
-}
-.form {
+.form-grup {
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 .form-input {
   width: 100%;
@@ -577,23 +577,57 @@ button {
   width: 360px;
   height: 40px;
   padding: 11px 16px;
-  margin-bottom: 8px;
-  margin-top: 4px;
+  padding-left: 38px;
+  outline: transparent;
+}
+.form-input-comment {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+  width: 360px;
+  height: 120px;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
 }
 .form-input::placeholder {
   color: var(--customers);
 }
-.label {
+.form-input:focus {
+  border-color: var(--focused-color);
+}
+.form-input:focus + .form-icon {
+  fill: var(--focused-color);
+}
+.form-input-comment:focus {
+  border-color: var(--focused-color);
+}
+.form-label span {
+  display: block;
   color: var(--customers);
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-
   letter-spacing: 0.04em;
 }
 .form-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 169px;
   height: 56px;
+}
+.form-control {
+  position: relative;
+  margin-top: 4px;
+}
+.form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
