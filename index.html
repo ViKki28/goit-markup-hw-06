@@ -423,7 +423,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close-modal1" width="8" weight="8">
@@ -502,13 +502,23 @@
                   cols="30"
                   rows="10"
                   placeholder="Text input"
-                >
-                </textarea>
+                ></textarea>
               </div>
             </label>
           </div>
-
-          <button type="submit" class="form-btn modal-btn">Send</button>
+          <div class="form-grup">
+            <input
+              type="checkbox"
+              class="form-check visually-hidden"
+              id="check"
+              name="check"
+            />
+            <label for="check" class="form-label-checkbox">
+              I accept the terms and conditions of the
+              <a href="" class="privacy"> Privacy Policy </a>
+            </label>
+          </div>
+          <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
     </div>
